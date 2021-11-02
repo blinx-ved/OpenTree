@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The_MrDucky</title>
+  <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+  <!--Clipboard-->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+  <!--Style-->
+  <style>
+      body, html{
+        height: 100%;
+      }
+      body{
+        background-image: url(bg.svg); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+  </style>
+</head>
+
+<body>
+    <div id="liveAlertPlaceholder"></div>
+    <img src="https://via.placeholder.com/150" alt="Profile Picture" class="mx-auto d-block rounded-circle mt-5">
+    <p class="fs-5 text-center mt-3">@The_MrDucky</p>
+    <p class="fs-6 text-center mt-0">Subline</p>
+    <div class="container-sm d-grid gap-2">
+      <button id="btn" class="btn btn-primary btn-lg bg-light p-2 text-dark bg-opacity-75 border border-dark" data-clipboard-text="tesrdgergft" type="button" onclick="alert('Copied To Clipboard.')"><span class="m-4"><i class="bi bi-discord me-4"></i>Discord</span></button>
+      <script>var btn = document.getElementById('btn'); var clipboard = new ClipboardJS(btn); clipboard.on('success', function (e) {console.log(e);}); clipboard.on('error', function (e) {console.log(e);});</script>
+
+      <button id="btn" class="btn btn-primary btn-lg bg-light p-2 text-dark bg-opacity-75 border border-dark" data-clipboard-text="effsefesfef" type="button"><a herf="#" class="m-4"><i class="bi bi-tiktok me-4"></i>Tiktok</a></button>
+    
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+</body>
+</html>
